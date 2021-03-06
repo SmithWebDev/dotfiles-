@@ -89,6 +89,8 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 
 au! BufWritePost $VIMC/init.vim source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+au BufWritePre * !mkdir -p %:h
+
 
 " set 'updatetime' to 15 seconds when in insert mode
 au InsertEnter * let updaterestore=&updatetime | set updatetime=15000

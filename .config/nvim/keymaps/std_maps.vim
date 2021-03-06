@@ -37,7 +37,6 @@ vnoremap > >gv
 "Create file under cursor, file does not currently exist
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 map <leader>cf :e <cfile><cr>
-
 " VIM tabs
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
