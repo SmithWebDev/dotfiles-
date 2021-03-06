@@ -3,11 +3,7 @@
 " "##################################################
 
 
-"===============AutoSave===============
-let g:auto_save = 1
 
-"===============Map Leader===============
-let g:mapleader = " "
 
 "===============Colorscheme===============
 "colorscheme abyss
@@ -22,7 +18,6 @@ let g:mapleader = " "
 
 "Allows mouse input in VIM window
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-set ma
 
 " enable syntax amd plugins (netrw)
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

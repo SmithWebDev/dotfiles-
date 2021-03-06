@@ -10,6 +10,10 @@ syntax enable   "turns on code syntax highlighting
 set termguicolors  "Allows for hex colors
 set t_Co=256
 
+
+"===============Mouse Input===============
+set mouse=a
+
 "===============NUMBERING===============
 set rnu  "shows line numbers and relative line numbers
 
