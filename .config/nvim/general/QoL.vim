@@ -12,17 +12,7 @@
 "colorscheme tesla
 "colorscheme maroloccio
 
-"===============Transparent Background====
-"hi Normal guibg=NONE ctermbg=NONE
 
-
-"Allows mouse input in VIM window
-"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-" enable syntax amd plugins (netrw)
-"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-filetype plugin on
-filetype indent on
 
 "nnoremap <Space><Space> za
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,9 +39,6 @@ let g:html_indent_tags = 'li\|p'
 "inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 "inoremap <S-Tab> <C-n>
 
-set tags=./tags;
-
-set scrolloff=999
 
 "sets the use of :E to create newfile and  directory  
 "ex. :E spec/models/blog_spec.rb

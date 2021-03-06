@@ -5,20 +5,23 @@
 "===============Map Leader===============
 let g:mapleader = " "
 
+" enable syntax amd plugins (netrw)
+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+filetype plugin indent on
+
 "===============COLORS===============
 syntax enable   "turns on code syntax highlighting
 set termguicolors  "Allows for hex colors
 set t_Co=256
 
-
 "===============Mouse Input===============
 set mouse=a
 
 "===============NUMBERING===============
-set rnu  "shows line numbers and relative line numbers
+set rnu  "show relative line numbers
 
 "===============EDITING===============
-set list listchars=tab:\ \ ,trail:·   "Displays tabs and trailing spaces visually
+set list listchars=tab:→\ ,trail:·,extends:…,eol:↩  "Displays tabs and trailing spaces visually
 "set tw=120   "Maximum width of test that is being inserted
 set ar   "Reloads file when changed outside of VIM
 set noro
@@ -66,13 +69,17 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
-
-"===============MISC===============
 set path+=**  "Search into subfolders
 set wmnu     "Enhanced command line completion
+set tags=./tags;
+
+"===============MISC===============
 set ru  "Show the line and column number of the cursor position
 set noeb   "Turns off sound when you hit end wall or line
 set updatetime=300
+
+"===============Transparent Background====
+hi Normal guibg=NONE ctermbg=NONE
 
 " ================ WINDOW ===========================
 set pumheight=10   " Makes popup window smaller
@@ -81,5 +88,8 @@ set cmdheight=2    " Give more space for displaying messages.
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 
-au! BufWritePost $VIM/init.vim source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+au! BufWritePost $VIMC/init.vim source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
+" set 'updatetime' to 15 seconds when in insert mode
+au InsertEnter * let updaterestore=&updatetime | set updatetime=15000
+au InsertLeave * let &updatetime=updaterestore
