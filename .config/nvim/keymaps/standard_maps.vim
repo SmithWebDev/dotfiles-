@@ -1,6 +1,6 @@
 " Source $VIMC files
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-"let g:which_key_map.v = { 'name' : +'vim file system' }
+let g:which_key_map.v = { 'name' : +'vim file system' }
 nnoremap <leader>vf :so %<CR>
 nnoremap <leader>vc :e $VIMC/configs<CR>
 nnoremap <leader>vd :so $VIMC/init.vim<CR>
@@ -21,14 +21,14 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-m> <C-w>l
+nnoremap <C-m> <C-w>_<C-w>\|
+nnoremap <C-=> <C-w>=
 
 
 nnoremap <leader>\| <C-w>\|
 nnoremap <leader>_ <C-w>_
 nnoremap <leader>\ <C-w>v
 nnoremap <leader>- <C-w>s
-nnoremap <leader>= <C-w>=
 nnoremap <leader>q <C-w>q
 
 " Better tabbing
@@ -43,7 +43,7 @@ map <leader>cf :e <cfile><cr>
 " VIM tabs
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-"let g:which_key_map.t = { 'name' : '+tabs' }
+let g:which_key_map.t = { 'name' : '+tabs' }
 nnoremap <leader>t= :-tabm<CR>
 nnoremap <leader>t- :+tabm<CR>
 nnoremap <leader>tf :tabedit %<CR>
@@ -84,7 +84,7 @@ nnoremap <Leader><Leader>s :%s/\<<C-r><C-W>\>/
 
 
 "====================Rails Maps====================
-"let g:which_key_map.r = {'name' : '+Rails',
+let g:which_key_map.r = {'name' : '+Rails',
       \'D': [':Destroy' , 'Rails destroy'],
       \'E': [':Extract' , 'Extract selected to partial'],
       \'R': [':Rake' , 'Run Related Test in Editor'],
@@ -123,7 +123,7 @@ nnoremap <silent> <leader>rgs :Generate scaffold
 "nnoremap <silent> <leader>rv- :sp $VIEWS<cr>
 "nnoremap <silent> <leader>rv\ :vsp $VIEWS<cr>
 
-"let g:which_key_map.R = {'name' : '+Rspec',
+let g:which_key_map.R = {'name' : '+Rspec',
       \'a': [':RunAllSpecs()<CR>', 'Run All Spec Files'],
       \'l': [':RunLastSpec()<CR>', 'Run Nearest Spec File'],
       \'s': [':RunNearestSpec()<CR>', 'Run Nearest Spec File'],
