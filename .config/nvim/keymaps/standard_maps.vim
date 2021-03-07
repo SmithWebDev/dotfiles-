@@ -21,6 +21,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <C-m> <C-w>l
 
 
 nnoremap <leader>\| <C-w>\|
@@ -56,9 +57,11 @@ nnoremap <leader>tt :tabs<CR>
 
 " Better nav for omnicomplete
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-inoremap <expr> <C-j> ("\<C-n>")
-inoremap <expr> <C-k> ("\<C-p>")
+"inoremap <expr> <C-j> ("\<C-n>")
 "inoremap <expr> <C-k> ("\<C-p>")
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr><Space> pumvisible() ? "\<C-g> u" : "\<Space>"
 
 
 " Custom & Extended Function map
@@ -131,3 +134,9 @@ map <Leader>Rt :call RunCurrentSpecFile()<CR>
 map <Leader>Rs :call RunNearestSpec()<CR>
 map <Leader>Rl :call RunLastSpec()<CR>
 map <Leader>Ra :call RunAllSpecs()<CR>
+
+"     PopUp Menu
+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"inoremap <expr><Space> pumvisible() ? "\<C-g> u" : "\<Space>"
