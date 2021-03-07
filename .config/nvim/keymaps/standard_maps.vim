@@ -1,10 +1,10 @@
-" Source $VIM files
+" Source $VIMC files
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 "let g:which_key_map.v = { 'name' : +'vim file system' }
 nnoremap <leader>vf :so %<CR>
-nnoremap <leader>vc :so $VIM/configs<CR>
-nnoremap <leader>vd :so $VIM/init.vim<CR>
-nnoremap <leader>vm :so $VIM/keymap<CR>
+nnoremap <leader>vc :e $VIMC/configs<CR>
+nnoremap <leader>vd :so $VIMC/init.vim<CR>
+nnoremap <leader>vm :e $VIMC/keymap<CR>
 
 " Simpler way to exit Insert Mode
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,6 +28,7 @@ nnoremap <leader>_ <C-w>_
 nnoremap <leader>\ <C-w>v
 nnoremap <leader>- <C-w>s
 nnoremap <leader>= <C-w>=
+nnoremap <leader>q <C-w>q
 
 " Better tabbing
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,6 +38,7 @@ vnoremap > >gv
 "Create file under cursor, file does not currently exist
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 map <leader>cf :e <cfile><cr>
+
 " VIM tabs
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
