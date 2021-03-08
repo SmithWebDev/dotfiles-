@@ -22,9 +22,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-m> <C-w>_<C-w>\|
-nnoremap <C-=> <C-w>=
-
-
+nnoremap = <C-w>=
 nnoremap <leader>\| <C-w>\|
 nnoremap <leader>_ <C-w>_
 nnoremap <leader>\ <C-w>v
