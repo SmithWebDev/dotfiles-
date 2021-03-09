@@ -4,6 +4,10 @@ let g:user_emmet_mode='a'
 let g:user_emmet_settings = {
       \ 'erb' : {
       \ 'extends' : 'html'},
+      \ '*.erb' : {
+      \ 'extends' : 'html'},
+      \ 'ruby' : {
+      \ 'extends' : 'html'},
       \ 'sass' : {
       \ 'extends' : 'css' },
       \ 'javascript' : {
@@ -12,3 +16,6 @@ let g:user_emmet_settings = {
 
 nnoremap <silent> , :<c-u>WhichKey ','<CR>
 
+"augroup EmmetSettings
+"  autocmd! FileType * imap ,<space> <plug>(emmet-expand-abbr)
+"augroup END

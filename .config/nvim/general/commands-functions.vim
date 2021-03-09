@@ -1,16 +1,26 @@
 " ================ AUTOCMDs ===========================
 "
-" set 'updatetime' to 15 seconds when in insert mode
+" set 'updatetime' to 5 seconds when in insert mode
 au CursorHoldI * stopinsert
 au InsertEnter * let updaterestore=&updatetime | set updatetime=5000
 au InsertLeave * let &updatetime=updaterestore
 
 
-au TextChanged,TextChangedI * silent execute ':write %'
-au! BufWritePost $VIMC/init.vim source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-"
-"
+" autocmd group for autosave 
+augroup autosave
+    autocmd!
+    autocmd BufRead * if &filetype == "" | setlocal ft=text | endif
+    autocmd FileType * autocmd TextChanged,InsertLeave <buffer> if &readonly == 0 | silent execute ':write %' | endif
+augroup END
+
+" set 'MkDir' to create dir if it does not already exist
 autocmd BufWritePre * call MkDir()
+
+
+" ================ AU Graveyard ===========================
+"au TextChanged,TextChangedI * silent execute ':write %'
+"
+
 
 " ================ Functions ===========================
 
@@ -36,3 +46,17 @@ function! MkDir()
       redraw
    endif
 endfunction
+
+function! ToggleZoom(zoom)
+  if exists("t:restore_zoom") && (a:zoom == v:true || t:restore_zoom.win != winnr())
+      exec t:restore_zoom.cmd
+      unlet t:restore_zoom
+  elseif a:zoom
+      let t:restore_zoom = { 'win': winnr(), 'cmd': winrestcmd() }
+      exec "normal \<C-W>\|\<C-W>_"
+  endif
+endfunction
+
+augroup restorezoom
+    au WinEnter * silent! :call ToggleZoom(v:false)
+augroup END

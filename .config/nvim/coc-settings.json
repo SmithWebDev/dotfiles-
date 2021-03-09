@@ -2,12 +2,12 @@
   // explorer
   "explorer.width": 30,
   // snippets
-  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets/",
-  "snippets.ultisnips.directories":
-  [
-    "$VIM/UltiSnips",
-    "$VIM/plug/plugged"
-  ],
+  //"snippets.userSnippetsDirectory": "~/.config/nvim/snippets/",
+  //"snippets.ultisnips.directories":
+  //[
+  //  "$VIM/UltiSnips",
+  //  "$VIM/plug/plugged"
+  //],
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",

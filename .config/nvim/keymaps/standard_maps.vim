@@ -59,7 +59,6 @@ nnoremap <leader>tt :tabs<CR>
 "inoremap <expr> <C-k> ("\<C-p>")
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr><Space> pumvisible() ? "\<C-g> u" : "\<Space>"
 
 
 " Custom & Extended Function map

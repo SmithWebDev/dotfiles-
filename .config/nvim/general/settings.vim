@@ -32,6 +32,8 @@ set sb  "Places new buffer below the current buffer
 set clipboard=unnamedplus   " Allows system clipboard to be used with vim
 set noswapfile
 set hidden                              " Required to keep multiple buffers open multiple buffers
+set pb=25
+
 
     " **************** Folds ****************************
 set foldmethod=indent   "fold based on indent
