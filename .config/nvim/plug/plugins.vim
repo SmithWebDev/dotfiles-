@@ -14,9 +14,7 @@ Plug 'vim-scripts/ScrollColors'
 
 "                    Editor
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Plug '907th/vim-auto-save'
 Plug 'tpope/vim-surround'
-"Plug 'tpope/vim-surround'
 
 "                    Universal
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -76,7 +76,7 @@ set tags=./tags;
 "===============MISC===============
 set ru  "Show the line and column number of the cursor position
 set noeb   "Turns off sound when you hit end wall or line
-set updatetime=300
+"set updatetime=300
 
 "===============Transparent Background====
 hi Normal guibg=NONE ctermbg=NONE
@@ -88,10 +88,4 @@ set cmdheight=2    " Give more space for displaying messages.
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 
-au! BufWritePost $VIMC/init.vim source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-au BufWritePre * !mkdir -p %:h
 
-
-" set 'updatetime' to 15 seconds when in insert mode
-au InsertEnter * let updaterestore=&updatetime | set updatetime=15000
-au InsertLeave * let &updatetime=updaterestore
