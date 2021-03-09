@@ -3,7 +3,7 @@
 let g:which_key_map.v = { 'name' : +'vim file system' }
 nnoremap <leader>vf :so %<CR>
 nnoremap <leader>vc :e $VIMC/configs<CR>
-nnoremap <leader>vd :so $VIMC/init.vim<CR>
+nnoremap <leader>vs :so $VIMC/init.vim<CR>
 nnoremap <leader>vm :e $VIMC/keymap<CR>
 
 " Simpler way to exit Insert Mode

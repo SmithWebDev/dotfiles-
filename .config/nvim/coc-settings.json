@@ -13,5 +13,7 @@
     "markdown",
     "html",
     "javascript",
-    "jsx"]
+    "jsx"
+  ],
+  "coc.preferences.extensionUpdateCheck": "daily"
 }

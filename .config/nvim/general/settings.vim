@@ -10,7 +10,7 @@ let g:mapleader = " "
 filetype plugin indent on
 
 "===============COLORS===============
-syntax enable   "turns on code syntax highlighting
+syntax on   "turns on code syntax highlighting
 set termguicolors  "Allows for hex colors
 set t_Co=256
 
@@ -26,7 +26,7 @@ set list listchars=tab:→\ ,trail:·,extends:…,eol:↩  "Displays tabs and tr
 set ar   "Reloads file when changed outside of VIM
 set noro
 au CursorHold * checktime
-set aw   "Writes the contents of file is it has been modified
+set aw awa   "Writes the contents of file is it has been modified
 set spr  "Places new window to the right of current window
 set sb  "Places new buffer below the current buffer
 set clipboard=unnamedplus   " Allows system clipboard to be used with vim

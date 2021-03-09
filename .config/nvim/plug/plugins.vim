@@ -14,8 +14,11 @@ Plug 'vim-scripts/ScrollColors'
 
 "                    Editor
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'     "Ability to focus certain areas of code
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
+Plug 'voldikss/vim-floaterm'
 
 "                    Universal
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

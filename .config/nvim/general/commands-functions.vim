@@ -10,7 +10,8 @@ au InsertLeave * let &updatetime=updaterestore
 augroup autosave
     autocmd!
     autocmd BufRead * if &filetype == "" | setlocal ft=text | endif
-    autocmd FileType * autocmd TextChanged,InsertLeave <buffer> if &readonly == 0 | silent execute ':write %' | endif
+    "autocmd FileType * autocmd TextChanged,InsertLeave <buffer> if &readonly == 0 | silent execute ':write %' | endif
+    autocmd TextChanged,InsertLeave * if &readonly == 0 | silent w | endif
 augroup END
 
 " set 'MkDir' to create dir if it does not already exist
@@ -19,7 +20,6 @@ autocmd BufWritePre * call MkDir()
 
 " ================ AU Graveyard ===========================
 "au TextChanged,TextChangedI * silent execute ':write %'
-"
 
 
 " ================ Functions ===========================
