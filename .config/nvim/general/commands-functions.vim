@@ -1,8 +1,8 @@
 " ================ AUTOCMDs ===========================
 "
 " set 'updatetime' to 15 seconds when in insert mode
-"au CursorHoldI * stopinsert
-au InsertEnter * let updaterestore=&updatetime | set updatetime=1000
+au CursorHoldI * stopinsert
+au InsertEnter * let updaterestore=&updatetime | set updatetime=5000
 au InsertLeave * let &updatetime=updaterestore
 
 

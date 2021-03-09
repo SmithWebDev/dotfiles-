@@ -14,6 +14,7 @@ Plug 'vim-scripts/ScrollColors'
 
 "                    Editor
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 
 "                    Universal
