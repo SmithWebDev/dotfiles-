@@ -15,11 +15,13 @@ Plug 'vim-scripts/ScrollColors'
 "                    Editor
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'     "Ability to focus certain areas of code
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'voldikss/vim-floaterm'
-
+"Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
 "                    Universal
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
