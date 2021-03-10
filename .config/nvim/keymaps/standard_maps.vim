@@ -1,6 +1,6 @@
 " Source $VIMC files
 "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-let g:which_key_map.v = { 'name' : +'vim file system' }
+let g:which_key_map.v = { 'name' : '+vim' }
 nnoremap <leader>vf :so %<CR>
 nnoremap <leader>vc :e $VIMC/configs<CR>
 nnoremap <leader>vs :so $VIMC/init.vim<CR>
@@ -44,6 +44,7 @@ map <leader>cf :e <cfile><cr>
 let g:which_key_map.t = { 'name' : '+tabs' }
 nnoremap <leader>t= :-tabm<CR>
 nnoremap <leader>t- :+tabm<CR>
+nnoremap <leader>tc :tabc<CR>
 nnoremap <leader>tf :tabedit %<CR>
 nnoremap <leader>th :tabfirst<CR>
 nnoremap <leader>tj :tabprev<CR>
